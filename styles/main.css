@@ -1,50 +1,75 @@
-<!DOCTYPE html>
-<html>
-     <head>
-     <title>Bloc Jams</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
-       <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-       <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-       <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/landing.css">
+html {
+     height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+     font-size: 100%;
+ }
 
-     </head>
+ body {
+     font-family: 'Open Sans'; /* sets our font to the "Open Sans" typeface */
+     color: white;             /* sets the text color to white */
+     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
+ }
 
-     <body>
-        <nav><!--navigation bar-->
-        </nav>
-
-        <section><!--hero content-->
-            <h1>Bloc Jams</h1>
-            <h3>Turn the music up!</h3>
-        </section>
-
-        <section class="selling-points container"><!--selling points-->
+ body.landing {
+     background-color: rgb(58,23,63); /* sets the background color to an RGB value (see below) */
+ }
 
 
-            <div class="point column third">
-                 <span class="ion-music-note"></span>
-                <h5 class="point-title"> Choose your music </h5>
-                <p class="point-description">The world is full of music; why should you have to listen to music that someone else chose?</p>
-            </div>
+ .navbar {
+     padding: 0.5rem;
+     background-color: rgb(101,18,95);
+ }
 
-             <div class="point column third">
-                 <span class="ion-radio-waves"></span>
+ .navbar .logo {
+     position: relative; /* positioning will be explained in a resource */
+     left: 2rem;
+ }
+.hero-content {
+     position: relative; /* positioning will be explained in a resource */
+     min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
+     background-image: url(../assets/images/bloc_jams_bg.jpg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+ }
+ .hero-content .hero-title {
+     position: absolute;             /* positioning will be explained in a resource */
+     top: 40%;                       /* positioning will be explained in a resource */
+     -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+     width: 100%;                    /* makes sure the title inhabits the full width of its container */
+     text-align: center;             /* aligns text in the horizontal center of the element */
+     font-size: 4rem;                /* specifies the size of the font in root em units */
+     font-weight: 300;               /* makes the font thinner or lighter weight */
+     text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
+     letter-spacing: 0.5rem;         /* puts 0.5 root ems worth of space between each letter */
+     text-shadow: 1px 1px 0px rgb(58,23,63); /* creates a shadow underneath the text for readability over the image */
+ }
+ .selling-points {
+     position: relative;
+     display: table;
+     width: 100%;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box; /* we'll explain this in a resource */
+ }
 
-                 <h5 class="point-title">Unlimited, streaming, ad-free>Unlimited, streaming, ad-free</h5>
+ .point {
+     display: table-cell;
+     position: relative;
+     width: 33.3%;
+     padding: 2rem;
+     text-align: center;
+ }
 
-                 <p class="point-description">No arbitrary limits. No distractions</p>
-             </div>
+ .point .point-title {
+     font-size: 1.25rem;
+ }
 
-            <div class="point column third">
-                 <span class="ion-iphone"></span>
-                <h5 class="point-title">Mobile enabled</h5>
-                <p class="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
-            </div>
-            bloc
-            </section>
-     </body>
-</html>
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
+ .ion-music-note,
+.ion-radio-waves,
+ .ion-iphone {
+     color: rgb(233,50,117);
+     font-size: 5rem;
+ }
