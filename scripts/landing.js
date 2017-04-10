@@ -1,5 +1,4 @@
 var pointsArray = document.getElementsByClassName('point');
- 
  var animatePoints = function (points) {
 
 	
