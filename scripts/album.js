@@ -72,6 +72,11 @@ var createSongRow = function(songNumber, songName, songLength) {
 
    // Album button templates
  var playButtonTemplate = '<a class="album-song-button"> <span class="ion-play"></span></a>';
+
+ var pauseButtonTemplate = '<a class="album-song-button"><span class="ion-pause"></span></a>';
+
+ // Store state of playing songs
+ var currentlyPlayingSong = null;
  
  window.onload = function() {
      setCurrentAlbum(albumPicasso);
@@ -88,6 +93,10 @@ var createSongRow = function(songNumber, songName, songLength) {
              
 		  // Selects first child element, which is the song-item-number element
              this.children[0].innerHTML = this.children[0].getAttribute('data-song-number');	 
+         });
+
+		 songRows[i].addEventListener('click', function(event) {
+             // Event handler call
          });
      }
 	 
@@ -120,7 +129,7 @@ var getSongItem = function(element) {
             return findParentByClassName(element, 'song-item-number');
         case 'album-view-song-item':
             return element.querySelector('.song-item-number');
-        case 'song-item-title':
+        case 'song-item-titlegit
         case 'song-item-duration':
             return findParentByClassName(element, 'album-view-song-item').querySelector('.song-item-number');
         case 'song-item-number':
