@@ -1,6 +1,12 @@
+<<<<<<< HEAD
  var pointsArray = document.getElementsByClassName('point');
 
  var animatePoints = function(points) {
+=======
+var animatePoints = function() {
+ 
+     var points = document.getElementsByClassName('point');
+>>>>>>> checkpoint9.1
  
      var revealFirstPoint = function() {
          points[0].style.opacity = 1;
@@ -27,6 +33,7 @@
      revealSecondPoint();
      revealThirdPoint();
  
+<<<<<<< HEAD
  };
 
 window.onload = function() {
@@ -47,3 +54,6 @@ window.onload = function() {
         }
         );
   };
+=======
+ };
+>>>>>>> checkpoint9.1
