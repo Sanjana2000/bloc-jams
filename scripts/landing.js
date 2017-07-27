@@ -28,3 +28,7 @@ var animatePoints = function() {
      revealThirdPoint();
  
  };
+
+
+
+ 
