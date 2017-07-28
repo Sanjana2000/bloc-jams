@@ -1,7 +1,4 @@
 
-      var pointsArray = document.getElementsByClassName('point');
-
-      var animatePoints = function (points) {
 
       var animatePoints = function () {
 
@@ -83,15 +80,13 @@
          if ($(window).height() > 950) {
           animatePoints();
       }
-       var sellingPoints = document.getElementsByClassName('selling-points')[0];
+  var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
 
-       var scrollDistance = sellingPoints.getBoundingClientRect().top - window.innerHeight + 200;
+     $(window).scroll(function(event) {
 
-          window.addEventListener('scroll', function (event) {
-
-          if (document.documentElement.scrollTop || document.body.scrollTop >= scrollDistance) {
-           animatePoints(pointsArray);
+       if ($(window).scrollTop() >= scrollDistance) {
+             animatePoints();
           }
       });
-    };
+    });
 
