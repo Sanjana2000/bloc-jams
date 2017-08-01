@@ -35,7 +35,7 @@ var albumEagles = {
      title: 'Hotel Calfornia',
      artist: 'Eagles',
      label: 'EM',
-     year: '1909',
+     year: '1975',
      albumArtUrl: 'assets/images/album_covers/20.png',
      songs: [
          { title: 'Hello, Operator?', duration: '1:01' },
