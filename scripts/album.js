@@ -30,10 +30,10 @@
      ]
  };
 
-//3rd Example Album
-//var albumEagles = {
-    // title: 'Hotel Calfornia',
-     //artist: 'Eagles',
+// my Album
+var albumEagles = {
+     title: 'Hotel Calfornia',
+     artist: 'Eagles',
      label: 'EM',
      year: '1909',
      albumArtUrl: 'assets/images/album_covers/20.png',
@@ -58,7 +58,8 @@
      };
 
 
- // #1
+     var setCurrentAlbum = function (album) {
+        // #1
         var albumTitle = document.getElementsByClassName('album-view-title')[0];
         var albumArtist = document.getElementsByClassName('album-view-artist')[0];
         var albumReleaseInfo = document.getElementsByClassName('album-view-release-info')[0];
@@ -66,7 +67,7 @@
         var albumSongList = document.getElementsByClassName('album-view-song-list')[0];
 
 
-    var setCurrentAlbum = function(album) {
+
 
          // #2
          albumTitle.firstChild.nodeValue = album.title;
@@ -74,14 +75,17 @@
          albumReleaseInfo.firstChild.nodeValue = album.year + ' ' + album.label;
          albumImage.setAttribute('src', album.albumArtUrl);
 
+
          // #3
          albumSongList.innerHTML = '';
+
 
          // #4
          for (var i = 0; i < album.songs.length; i++) {
              albumSongList.innerHTML += createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
          }
      };
+
 
      window.onload = function() {
          setCurrentAlbum(albumPicasso);
