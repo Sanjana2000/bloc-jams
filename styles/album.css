@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 body.album {
+=======
+ body.album {
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
      background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-position: center center;
      background-size: cover;
+<<<<<<< HEAD
      padding-bottom: 200px;
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
  }
  
  .album-cover-art {
@@ -13,7 +20,12 @@ body.album {
      margin-top: 1rem;
      width: 60%;
  }
+<<<<<<< HEAD
 .album-view-details {
+=======
+ 
+ .album-view-details {
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
      position: relative;
      top: 1.5rem;
      padding: 1rem;
@@ -33,6 +45,10 @@ body.album {
      font-weight: 300;
      font-size: 0.75rem;
  }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
 .album-view-song-list {
      width: 90%;
      margin: 1.5rem auto;
@@ -43,7 +59,11 @@ body.album {
  
  .album-view-song-item {
      height: 3rem;
+<<<<<<< HEAD
       /* #1 */
+=======
+     /* #1 */
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
      border-bottom: 1px solid rgba(255,255,255,0.5);
  }
  
@@ -53,11 +73,20 @@ body.album {
  
  .song-item-title {
      width: 85%;
+<<<<<<< HEAD
  }
  
  .song-item-duration {
      width: 5%;
 }
+=======
+     }
+ 
+ .song-item-duration {
+     width: 5%;
+ }
+
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
 /* #2 */
  @media (max-width: 640px) and (min-width: 320px) {
      .album-view-details {
@@ -77,4 +106,9 @@ body.album {
          width: 80%;
          margin: auto;
      }
+<<<<<<< HEAD
 }
+=======
+ }
+
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
