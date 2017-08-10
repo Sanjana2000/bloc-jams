@@ -52,9 +52,11 @@
                   + '  <td class="song-item-title">' + songName + '</td>'
                   + '  <td class="song-item-duration">' + songLength + '</td>'
                   + '</tr>'
-                  ;
+                   ;
 
             var $row = $(template);
+             
+        
 
  var clickHandler = function() {
          // clickHandler logic
@@ -66,11 +68,14 @@ var clickHandler = function() {
 		var currentlyPlayingCell = $('.song-item-number[data-song-number="' + currentlyPlayingSong + '"]');
 		currentlyPlayingCell.html(currentlyPlayingSong);
 	}
+ 
 	if (currentlyPlayingSong !== songNumber) {
 		// Switch from Play -> Pause button to indicate new song is playing.
 		$(this).html(pauseButtonTemplate);
 		currentlyPlayingSong = songNumber;
-	} else if (currentlyPlayingSong === songNumber) {
+	} 
+ 
+  else if (currentlyPlayingSong === songNumber) {
 		// Switch from Pause -> Play button to pause currently playing song.
 		$(this).html(playButtonTemplate);
 		currentlyPlayingSong = null;
@@ -81,18 +86,33 @@ var clickHandler = function() {
 
             var onHover = function(event) {
             // Placeholder for function logic
+             var songNumberCell = $(this).find('.song-item-number');
+        var songNumber = songNumberCell.attr('data-song-number');
+
+        if (songNumber !== currentlyPlayingSong) {
+            songNumberCell.html(playButtonTemplate);
+        }
+    };
         };
+
+
             var offHover = function(event) {
          // Placeholder for function logic
+            var songNumberCell = $(this).find('.song-item-number');
+        var songNumber = songNumberCell.attr('data-song-number');
+
+        if (songNumber !== currentlyPlayingSong) {
+            songNumberCell.html(songNumber);
+        } 
         };
 
-
-      // #1
+  // #1
         $row.find('.song-item-number').click(clickHandler);
       // #2
         $row.hover(onHover, offHover);
       // #3
-        return $row;
+        return $row;   
+      
        };
 
 
@@ -129,20 +149,19 @@ var clickHandler = function() {
              };
 
 
-              var songListContainer = document.getElementsByClassName('album-view-song-list')[0];
-              var songRows = document.getElementsByClassName('album-view-song-item');
+              
                 // Album button templates
-              var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
+            var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
 
+            var pauseButtonTemplate = '<a class="album-song-button"><span class="ion-pause"></span></a>';
+
+            var currentlyPlayingSong = null;
 
              $(document).ready(function() {
                     setCurrentAlbum(albumPicasso);
 
 
-                          for (var i = 0; i < songRows.length; i++) {
-
-         }
-
+             }
              var albums =[albumPicasso, albumMarconi, albumEagles];
              var index =1;
 
