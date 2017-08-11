@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 body.album {
+=======
+ body.album {
+>>>>>>> checkpoint19
      background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
      background-repeat: no-repeat;
      background-attachment: fixed;
@@ -12,7 +16,12 @@ body.album {
      margin-top: 1rem;
      width: 60%;
  }
+<<<<<<< HEAD
 .album-view-details {
+=======
+ 
+ .album-view-details {
+>>>>>>> checkpoint19
      position: relative;
      top: 1.5rem;
      padding: 1rem;
@@ -32,6 +41,10 @@ body.album {
      font-weight: 300;
      font-size: 0.75rem;
  }
+<<<<<<< HEAD
+=======
+
+>>>>>>> checkpoint19
 .album-view-song-list {
      width: 90%;
      margin: 1.5rem auto;
@@ -42,7 +55,11 @@ body.album {
  
  .album-view-song-item {
      height: 3rem;
+<<<<<<< HEAD
       /* #1 */
+=======
+     /* #1 */
+>>>>>>> checkpoint19
      border-bottom: 1px solid rgba(255,255,255,0.5);
  }
  
@@ -52,11 +69,20 @@ body.album {
  
  .song-item-title {
      width: 85%;
+<<<<<<< HEAD
  }
  
  .song-item-duration {
      width: 5%;
 }
+=======
+     }
+ 
+ .song-item-duration {
+     width: 5%;
+ }
+
+>>>>>>> checkpoint19
 /* #2 */
  @media (max-width: 640px) and (min-width: 320px) {
      .album-view-details {
@@ -76,4 +102,9 @@ body.album {
          width: 80%;
          margin: auto;
      }
+<<<<<<< HEAD
 }
+=======
+ }
+
+>>>>>>> checkpoint19
