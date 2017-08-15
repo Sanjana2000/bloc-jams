@@ -1,13 +1,12 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
  var pointsArray = document.getElementsByClassName('point');
 
  var animatePoints = function(points) {
-=======
+
 var animatePoints = function() {
  
      var points = document.getElementsByClassName('point');
->>>>>>> checkpoint9.1
+
  
      var revealFirstPoint = function() {
          points[0].style.opacity = 1;
@@ -34,9 +33,9 @@ var animatePoints = function() {
      revealSecondPoint();
      revealThirdPoint();
  
-<<<<<<< HEAD
+
  };
-=======
+
   var pointsArray = document.getElementsByClassName('point');
        var revealPoint = function (point) {
                points.style.opacity = 1;
@@ -47,11 +46,11 @@ var animatePoints = function() {
       var animatePoints = function (points) {
            forEach(points, revealPoints);
 
->>>>>>> checkpoint10
+
 
     };
 
-<<<<<<< HEAD
+
 // Automatically animate the points on a tall screen where scrolling can't trigger the animation
      if (window.innerHeight > 950) {
          animatePoints(pointsArray);
@@ -68,10 +67,9 @@ var animatePoints = function() {
         }
         );
   };
-=======
+
  };
->>>>>>> checkpoint9.1
-=======
+
  window.onload = function () {
  // Automatically animate the points on a tall screen where scrolling can't trigger the animation
       if (window.innerHeight > 950) {
@@ -85,4 +83,4 @@ var animatePoints = function() {
          }
      });
    };
->>>>>>> checkpoint10
+
