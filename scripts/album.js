@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // These are two album objects ( my temporary database)for this Album.In real senario,I'll pull hundreds or thousands from other database.These objects store info about songs,ex;title,artist,label,songs etc.
 
 // Example Album
@@ -73,7 +73,7 @@ var setCurrentAlbum = function(album) {
  };
 
 	
-=======
+
        
             var createSongRow = function(songNumber, songName, songLength) {
                  var template =
@@ -237,4 +237,4 @@ var updatePlayerBarSong = function() {
            )};
         };
                 
->>>>>>> checkpoint19
+
