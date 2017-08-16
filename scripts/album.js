@@ -306,10 +306,3 @@ $(document).ready(function() {
     $playerBarPlayToggle.click(togglePlayFromPlayerBar);
 });
 
-
-
-
-
-
-
-

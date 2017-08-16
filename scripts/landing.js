@@ -1,3 +1,4 @@
+
 var animatePoints = function() {
     var revealPoint = function() {
         $(this).css({
@@ -22,6 +23,7 @@ $(window).load(function() {
          }
     });
 });
+
 
 
 
