@@ -3,28 +3,24 @@
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
  }
-<<<<<<< HEAD
-=======
 
->>>>>>> checkpoint19
+
+
 html {
      height: 100%; /* makes sure our HTML takes up 100% of the browser window */
      font-size: 100%;
  }
-<<<<<<< HEAD
 
- body {
-     font-family: 'Open Sans'; /* sets our font to the "Open Sans" typeface */
-=======
+
  
  body {
      font-family: 'Open Sans , sans-serif'; /* sets our font to the "Open Sans" typeface */
->>>>>>> checkpoint19
+
      color: white;             /* sets the text color to white */
      min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
  }
 
-<<<<<<< HEAD
+
  body.landing {
      background-color: rgb(58,23,63); /* sets the background color to an RGB value (see below) */
  }
@@ -44,7 +40,7 @@ z-index: 1;
      position: relative; /* positioning will be explained in a resource */
      left: 2rem;
   cursor: pointer;  /* produces the finger-pointer icon when you hover over the logo */
-=======
+
  
 
   .navbar {
@@ -60,7 +56,7 @@ z-index: 1;
      position: relative; /* positioning will be explained in a resource */
      left: 2rem;
      cursor: pointer;  /* produces the finger-pointer icon when you hover over the logo */
->>>>>>> checkpoint19
+
  }
 
  .navbar .links-container {
@@ -73,12 +69,10 @@ z-index: 1;
      /* #3 */
      text-decoration: none;
  }
-<<<<<<< HEAD
-.links-container .navbar-link {
-=======
+
 
  .links-container .navbar-link {
->>>>>>> checkpoint19
+
      display: table-cell;
      position: relative;
      height: 100%;
@@ -95,19 +89,12 @@ z-index: 1;
      text-decoration: none;
      cursor: pointer;
  }
-<<<<<<< HEAD
-/* #5 */
- .links-container .navbar-link:hover {
-=======
-     /* #5 */
+
+
   .links-container .navbar-link:hover {
->>>>>>> checkpoint19
-     color: rgb(233,50,117);
+       color: rgb(233,50,117);
  }
 
-
-<<<<<<< HEAD
- }
 .hero-content {
      position: relative; /* positioning will be explained in a resource */
      min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
@@ -156,50 +143,45 @@ z-index: 1;
      color: rgb(233,50,117);
      font-size: 5rem;
  }
+  
+  
+  
+  
+  
+  
  .container {
      margin: 0 auto;
      max-width: 64rem;
  }
 .container.narrow {
-=======
+
   .container {
      margin: 0 auto;
      max-width: 64rem;
  }
 
  .container.narrow {
->>>>>>> checkpoint19
-     max-width: 56rem;
+   max-width: 56rem;
  }
 
  /* Medium and small screens (640px) */
  @media (min-width: 640px) {
-<<<<<<< HEAD
-  html { font-size: 112%; }
-   /* Style information will go here */
- }
-
-=======
    html { font-size: 112%; }
->>>>>>> checkpoint19
+   
 
      .column {
          float: left;
          padding-left: 1rem;
          padding-right: 1rem;
      }
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> checkpoint19
      .column.full { width: 100%; }
      .column.two-thirds { width: 66.7%; }
      .column.half { width: 50%; }
      .column.third { width: 33.3%; }
      .column.fourth { width: 25%; }
      .column.flow-opposite { float: right; }
-<<<<<<< HEAD
+
  /* Large screens (1024px) */
  @media (min-width: 1024px) {
 html { font-size: 120%; }
@@ -214,12 +196,5 @@ html { font-size: 120%; }
 .clearfix::after {
    clear: both;
 }
-=======
-  }
+
  
- /* Large screens (1024px) */
- @media (min-width: 1024px) {
-   html { font-size: 120%; }
-   /* Style information will go here */
- }
->>>>>>> checkpoint19

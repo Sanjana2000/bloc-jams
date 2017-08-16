@@ -21,26 +21,16 @@ body.landing {
      text-align: center;
      font-size: 4rem;
      font-weight: 300;
-<<<<<<< HEAD
      text-transform: uppercase;
-=======
-   text-transform: uppercase;
->>>>>>> checkpoint19
+     text-transform: uppercase;
      letter-spacing: 0.5rem;
      text-shadow: 1px 1px 0px rgb(58,23,63);
  }
  
  .selling-points {
      position: relative;
-<<<<<<< HEAD
-    
-     
- }
-=======
-     
-    }
->>>>>>> checkpoint19
- 
+}
+
  .point {
      
      position: relative;
@@ -56,13 +46,8 @@ body.landing {
      -webkit-transition-delay: 0.2s;
      -moz-transition-delay: 0.2s;
      transition-delay: 0.2s;
-<<<<<<< HEAD
-
  }
  
-=======
- }
->>>>>>> checkpoint19
  .point .point-title {
      font-size: 1.25rem;
  }
