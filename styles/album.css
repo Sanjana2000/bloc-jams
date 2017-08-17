@@ -1,17 +1,10 @@
-<<<<<<< HEAD
 body.album {
-=======
- body.album {
->>>>>>> b287213008b53114748c3e27f90697139f71d7ac
      background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-position: center center;
      background-size: cover;
-<<<<<<< HEAD
-     padding-bottom: 200px;
-=======
->>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+     padding-bottom: 200px;    /* Reserve space at the bottom of the page for the player controls (see player_bar.css) to ensure that they don't cover any content' */
  }
  
  .album-cover-art {
@@ -20,12 +13,7 @@ body.album {
      margin-top: 1rem;
      width: 60%;
  }
-<<<<<<< HEAD
 .album-view-details {
-=======
- 
- .album-view-details {
->>>>>>> b287213008b53114748c3e27f90697139f71d7ac
      position: relative;
      top: 1.5rem;
      padding: 1rem;
@@ -45,11 +33,7 @@ body.album {
      font-weight: 300;
      font-size: 0.75rem;
  }
-<<<<<<< HEAD
-=======
-
->>>>>>> b287213008b53114748c3e27f90697139f71d7ac
-.album-view-song-list {
+ .album-view-song-list {
      width: 90%;
      margin: 1.5rem auto;
      font-weight: 300;
@@ -59,35 +43,114 @@ body.album {
  
  .album-view-song-item {
      height: 3rem;
-<<<<<<< HEAD
-      /* #1 */
-=======
-     /* #1 */
->>>>>>> b287213008b53114748c3e27f90697139f71d7ac
      border-bottom: 1px solid rgba(255,255,255,0.5);
  }
  
  .song-item-number {
      width: 5%;
+     min-width: 30px;  /* Make sure the Play button fits in the song number column to avoid the visual distraction of dynamically resizing during a hover event */
  }
  
  .song-item-title {
      width: 85%;
-<<<<<<< HEAD
  }
  
  .song-item-duration {
      width: 5%;
 }
-=======
-     }
- 
  .song-item-duration {
      width: 5%;
  }
 
->>>>>>> b287213008b53114748c3e27f90697139f71d7ac
 /* #2 */
+=======
+body.album {
+    background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 200px;
+}
+
+.album-cover-art {
+    position: relative;
+    left: 20%;
+    margin-top: 1rem;
+    width: 60%;
+}
+
+.album-view-details {
+    position: relative;
+    top: 1.5rem;
+    padding: 1rem;
+}
+
+.album-view-details .album-view-title {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.album-view-details .album-view-artist {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.album-view-details .album-view-release-info {
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+.album-view-song-list {
+    width: 90%;
+    margin: 1.5rem auto;
+    font-weight: 300;
+    font-size: 0.75em;
+    border-collapse: collapse;
+}
+
+.album-view-song-item {
+    height: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.song-item-number {
+    width: 5%;
+    min-width: 30px;
+}
+
+.song-item-title {
+    width: 85%;
+}
+
+.song-item-duration {
+    width: 5%;
+}
+
+
+.album-song-button {
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    color: rgb(210, 40, 123);
+    border-radius: 50% 50%;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+
+.album-song-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(210, 40, 123);
+}
+
+.album-song-button span {
+    line-height: 28px;
+}
+
+
+/* Centered text looks better on smaller devices */
  @media (max-width: 640px) and (min-width: 320px) {
      .album-view-details {
          text-align: center;
@@ -97,8 +160,7 @@ body.album {
          margin-top: 0;   
      }
  }
- 
- /* #3 */
+
  @media (max-width: 1024px) and (min-width: 320px) {
     .album-view-song-list {
          position: relative;
@@ -106,9 +168,4 @@ body.album {
          width: 80%;
          margin: auto;
      }
-<<<<<<< HEAD
-}
-=======
  }
-
->>>>>>> b287213008b53114748c3e27f90697139f71d7ac
