@@ -1,9 +1,4 @@
-
-
-
-
- body.album {
-
+body.album {
      background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
      background-repeat: no-repeat;
      background-attachment: fixed;
@@ -18,8 +13,7 @@
      margin-top: 1rem;
      width: 60%;
  }
- 
- .album-view-details {
+.album-view-details {
      position: relative;
      top: 1.5rem;
      padding: 1rem;
@@ -39,7 +33,6 @@
      font-weight: 300;
      font-size: 0.75rem;
  }
-
  .album-view-song-list {
      width: 90%;
      margin: 1.5rem auto;
@@ -64,8 +57,13 @@
  
  .song-item-duration {
      width: 5%;
+}
+ .song-item-duration {
+     width: 5%;
  }
 
+/* #2 */
+=======
 body.album {
     background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
     background-repeat: no-repeat;
@@ -171,25 +169,3 @@ body.album {
          margin: auto;
      }
  }
-
- 
-
-@media (max-width: 640px) and (min-width: 320px) {
-    .album-view-details {
-        text-align: center;
-    }
-
-    .album-view-title {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 1024px) and (min-width: 320px) {
-   .album-view-song-list {
-        position: relative;
-        top: 1rem;
-        width: 80%;
-        margin: auto;
-    }
-}
-
