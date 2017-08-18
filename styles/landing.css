@@ -21,20 +21,40 @@ body.landing {
      text-align: center;
      font-size: 4rem;
      font-weight: 300;
+<<<<<<< HEAD
      text-transform: uppercase;
 
      text-transform: uppercase;
 
 
+=======
+<<<<<<< HEAD
+     text-transform: uppercase;
+=======
+   text-transform: uppercase;
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
      letter-spacing: 0.5rem;
      text-shadow: 1px 1px 0px rgb(58,23,63);
  }
 
  .selling-points {
      position: relative;
+<<<<<<< HEAD
 }
 
 
+=======
+<<<<<<< HEAD
+    
+     
+ }
+=======
+     
+    }
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+ 
+>>>>>>> checkpoint16
  .point {
      position: relative;
      padding: 2rem;
@@ -49,8 +69,18 @@ body.landing {
      -webkit-transition-delay: 0.2s;
      -moz-transition-delay: 0.2s;
      transition-delay: 0.2s;
+<<<<<<< HEAD
  }
  
+=======
+<<<<<<< HEAD
+
+ }
+ 
+=======
+ }
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
  .point .point-title {
      font-size: 1.25rem;
  }

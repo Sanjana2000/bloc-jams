@@ -5,6 +5,10 @@ body.collection {
      background-position: center center;
      background-size: cover;
  }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> checkpoint16
  
  .album-covers {
      position: relative;
@@ -15,13 +19,21 @@ body.collection {
      position: relative;
  }
 
+<<<<<<< HEAD
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
  .collection-album-container {
      position: relative;
      margin-top: 30px;
      margin-bottom: 20px;
      text-align: center;
  }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> checkpoint16
  
  .collection-album-container .caption {
      margin-top: 10px;
@@ -32,13 +44,21 @@ body.collection {
      margin-top: 10px;
  }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
  .collection-album-container .caption p {
      font-size: 1rem;
      font-weight: 300;
      color: rgba(255, 255, 255, 0.6);
  }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> checkpoint16
  
  .collection-album-container .caption p a {
      color: rgba(255, 255, 255, 0.6);
@@ -64,4 +84,8 @@ body.collection {
 .collection-album-container img {
      width: 80%;
  }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16

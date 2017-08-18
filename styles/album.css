@@ -1,15 +1,30 @@
+<<<<<<< HEAD
 
 
 
 
  body.album {
 
+=======
+<<<<<<< HEAD
+body.album {
+=======
+ body.album {
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
      background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-position: center center;
      background-size: cover;
+<<<<<<< HEAD
      padding-bottom: 200px;    /* Reserve space at the bottom of the page for the player controls (see player_bar.css) to ensure that they don't cover any content' */
+=======
+<<<<<<< HEAD
+     padding-bottom: 200px;
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
  }
  
  .album-cover-art {
@@ -18,8 +33,17 @@
      margin-top: 1rem;
      width: 60%;
  }
+<<<<<<< HEAD
  
  .album-view-details {
+=======
+<<<<<<< HEAD
+.album-view-details {
+=======
+ 
+ .album-view-details {
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
      position: relative;
      top: 1.5rem;
      padding: 1rem;
@@ -39,8 +63,16 @@
      font-weight: 300;
      font-size: 0.75rem;
  }
+<<<<<<< HEAD
 
  .album-view-song-list {
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+.album-view-song-list {
+>>>>>>> checkpoint16
      width: 90%;
      margin: 1.5rem auto;
      font-weight: 300;
@@ -50,6 +82,14 @@
  
  .album-view-song-item {
      height: 3rem;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      /* #1 */
+=======
+     /* #1 */
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
      border-bottom: 1px solid rgba(255,255,255,0.5);
  }
  
@@ -60,12 +100,17 @@
  
  .song-item-title {
      width: 85%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> checkpoint16
  }
  
  .song-item-duration {
      width: 5%;
  }
 
+<<<<<<< HEAD
 body.album {
     background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
     background-repeat: no-repeat;
@@ -153,6 +198,10 @@ body.album {
 
 
 /* Centered text looks better on smaller devices */
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+/* #2 */
+>>>>>>> checkpoint16
  @media (max-width: 640px) and (min-width: 320px) {
      .album-view-details {
          text-align: center;
@@ -170,6 +219,7 @@ body.album {
          width: 80%;
          margin: auto;
      }
+
  }
 
  
@@ -192,4 +242,5 @@ body.album {
         margin: auto;
     }
 }
+
 

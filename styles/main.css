@@ -3,25 +3,44 @@
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
  }
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
 html {
      height: 100%; /* makes sure our HTML takes up 100% of the browser window */
      font-size: 100%;
  }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> checkpoint16
 
  
  body {
      font-family: 'Open Sans , sans-serif'; /* sets our font to the "Open Sans" typeface */
+<<<<<<< HEAD
 
  body {
      font-family: 'Open Sans , sans-serif'; /* sets our font to the "Open Sans" typeface */
 
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
      color: white;             /* sets the text color to white */
      min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
  }
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> checkpoint16
  body.landing {
      background-color: rgb(58,23,63); /* sets the background color to an RGB value (see below) */
  }
@@ -57,7 +76,11 @@ z-index: 1;
      position: relative; /* positioning will be explained in a resource */
      left: 2rem;
      cursor: pointer;  /* produces the finger-pointer icon when you hover over the logo */
+<<<<<<< HEAD
 
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
  }
 
  .navbar .links-container {
@@ -69,11 +92,20 @@ z-index: 1;
      color: white;
      text-decoration: none;
  }
+<<<<<<< HEAD
 
 
 
+=======
+<<<<<<< HEAD
+>>>>>>> checkpoint16
 .links-container .navbar-link {
 
+<<<<<<< HEAD
+=======
+ .links-container .navbar-link {
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
      display: table-cell;
      position: relative;
      height: 100%;
@@ -88,6 +120,7 @@ z-index: 1;
      text-decoration: none;
      cursor: pointer;
  }
+<<<<<<< HEAD
 
 
 
@@ -98,6 +131,20 @@ z-index: 1;
 
  .links-container .navbar-link:hover {
      color: rgb(233,50,117);
+=======
+<<<<<<< HEAD
+/* #5 */
+ .links-container .navbar-link:hover {
+=======
+     /* #5 */
+  .links-container .navbar-link:hover {
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+     color: rgb(233,50,117);
+ }
+
+
+<<<<<<< HEAD
+>>>>>>> checkpoint16
  }
 
 .hero-content {
@@ -167,28 +214,60 @@ z-index: 1;
  }
 
  .container.narrow {
+<<<<<<< HEAD
    max-width: 56rem;
+=======
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+     max-width: 56rem;
+>>>>>>> checkpoint16
  }
 
  /* Medium and small screens (640px) */
  @media (min-width: 640px) {
+<<<<<<< HEAD
    html { font-size: 112%; }
    
+=======
+<<<<<<< HEAD
+  html { font-size: 112%; }
+   /* Style information will go here */
+ }
+
+=======
+   html { font-size: 112%; }
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
 
      .column {
          float: left;
          padding-left: 1rem;
          padding-right: 1rem;
      }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+ 
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
      .column.full { width: 100%; }
      .column.two-thirds { width: 66.7%; }
      .column.half { width: 50%; }
      .column.third { width: 33.3%; }
      .column.fourth { width: 25%; }
      .column.flow-opposite { float: right; }
+<<<<<<< HEAD
 
      max-width: 56rem;
+=======
+<<<<<<< HEAD
+ /* Large screens (1024px) */
+ @media (min-width: 1024px) {
+html { font-size: 120%; }
+   /* Style information will go here */
+>>>>>>> checkpoint16
  }
 
  /* Medium and small screens (640px) */
@@ -224,4 +303,16 @@ z-index: 1;
 .clearfix::after {
    clear: both;
 }
+<<<<<<< HEAD
 
+=======
+=======
+  }
+ 
+ /* Large screens (1024px) */
+ @media (min-width: 1024px) {
+   html { font-size: 120%; }
+   /* Style information will go here */
+ }
+>>>>>>> b287213008b53114748c3e27f90697139f71d7ac
+>>>>>>> checkpoint16
