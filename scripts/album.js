@@ -13,7 +13,7 @@
          { title: 'Magenta', duration: '2:15'}
      ]
  };
-
+ 
  // Another Example Album
  var albumMarconi = {
      title: 'The Telephone',
@@ -59,7 +59,7 @@ var createSongRow = function(songNumber, songName, songLength) {
       + '  <td class="song-item-duration">' + songLength + '</td>'
       + '</tr>'
       ;
-
+ 
      return template;
  };
 
@@ -71,12 +71,12 @@ var setCurrentAlbum = function(albumIndex) {
      var albumReleaseInfo = document.getElementsByClassName('album-view-release-info')[0];
      var albumImage = document.getElementsByClassName('album-cover-art')[0];
      var albumSongList = document.getElementsByClassName('album-view-song-list')[0];
-
+ 
      albumTitle.firstChild.nodeValue = album.title;
      albumArtist.firstChild.nodeValue = album.artist;
      albumReleaseInfo.firstChild.nodeValue = album.year + ' ' + album.label;
      albumImage.setAttribute('src', album.albumArtUrl);
-
+ 
      albumSongList.innerHTML = '';
 
      for (var i = 0; i < album.songs.length; i++) {
@@ -115,12 +115,12 @@ var getSongItem = function(element) {
             return element;
         default:
             return;
-    }
+    }  
 };
 
  var clickHandler = function(targetElement) {
     var songItem = getSongItem(targetElement);
-
+     
      if (currentlyPlayingSong === null) {
          songItem.innerHTML = pauseButtonTemplate;
          currentlyPlayingSong = songItem.getAttribute('data-song-number');
@@ -138,7 +138,7 @@ var getSongItem = function(element) {
  var songListContainer = document.getElementsByClassName('album-view-song-list')[0];
  var songRows = document.getElementsByClassName('album-view-song-item');
 
- var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
+ var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>'; 
  var pauseButtonTemplate = '<a class="album-song-button"><span class="ion-pause"></span></a>';
 
  var currentlyPlayingSong = null;
@@ -154,7 +154,7 @@ var getSongItem = function(element) {
             }
          }
      });
-
+     
     for (var i = 0; i < songRows.length; i++) {
          songRows[i].addEventListener('mouseleave', function(event) {
              var songItem = getSongItem(event.target);

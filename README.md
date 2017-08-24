@@ -1,4 +1,2 @@
 # bloc-jams
-Bloc assignments
-
-Hello!
+Bloc jams lesson project
