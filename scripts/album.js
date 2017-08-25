@@ -59,28 +59,31 @@ var createSongRow = function(songNumber, songName, songLength) {
       + '  <td class="song-item-duration">' + songLength + '</td>'
       + '</tr>'
       ;
- 
-     return template;
+  return $(template);
+    
  };
 
-var setCurrentAlbum = function(albumIndex) {
-     currentAlbum = albumIndex;
-     var album = albums[currentAlbum];
-     var albumTitle = document.getElementsByClassName('album-view-title')[0];
-     var albumArtist = document.getElementsByClassName('album-view-artist')[0];
-     var albumReleaseInfo = document.getElementsByClassName('album-view-release-info')[0];
-     var albumImage = document.getElementsByClassName('album-cover-art')[0];
-     var albumSongList = document.getElementsByClassName('album-view-song-list')[0];
+var setCurrentAlbum = function(album) {
+     
+      var $albumTitle = $('.album-view-title');
+     var $albumArtist = $('.album-view-artist');
+     var $albumReleaseInfo = $('.album-view-release-info');
+     var $albumImage = $('.album-cover-art');
+     var $albumSongList = $('.album-view-song-list');
  
-     albumTitle.firstChild.nodeValue = album.title;
-     albumArtist.firstChild.nodeValue = album.artist;
-     albumReleaseInfo.firstChild.nodeValue = album.year + ' ' + album.label;
-     albumImage.setAttribute('src', album.albumArtUrl);
  
-     albumSongList.innerHTML = '';
+      $albumTitle.text(album.title);
+     $albumArtist.text(album.artist);
+     $albumReleaseInfo.text(album.year + ' ' + album.label);
+     $albumImage.attr('src', album.albumArtUrl);
+ 
+ 
+
+      $albumSongList.empty();
 
      for (var i = 0; i < album.songs.length; i++) {
-         albumSongList.innerHTML += createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
+              var $newRow = createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
+         $albumSongList.append($newRow);
      }
  };
 
@@ -144,7 +147,7 @@ var getSongItem = function(element) {
  var currentlyPlayingSong = null;
 
  window.onload = function() {
-     setCurrentAlbum(0);
+     setCurrentAlbum(albumPicasso);
      songListContainer.addEventListener('mouseover', function(event) {
          // Only target individual song rows during event delegation
          if (event.target.parentElement.className === 'album-view-song-item') {
@@ -171,5 +174,10 @@ var getSongItem = function(element) {
  };
 
 document.getElementsByClassName('album-cover-art')[0].onclick = function () {
-    setCurrentAlbum((currentAlbum+1)%3);
-};
+    for (var i = 0; i < albums.length; i++) {
+        if (albums[i] == currentAlbum) {
+            setCurrentAlbum(albums[(i+1)%albums.length]);
+            break;
+        }
+    }
+ };
