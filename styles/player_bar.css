@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  .player-bar {
+=======
+.player-bar {
+>>>>>>> checkpoint18
      position: fixed;
      bottom: 0;
      left: 0;
@@ -7,10 +11,19 @@
      background-color: rgba(255, 255, 255, 0.3);
      z-index: 100;
  }
+<<<<<<< HEAD
   .player-bar a {
      font-size: 1.1rem;
      vertical-align: middle;
  }
+=======
+
+.player-bar a {
+     font-size: 1.1rem;
+     vertical-align: middle;
+ }
+
+>>>>>>> checkpoint18
  
  .player-bar a,
  .player-bar a:hover {
@@ -36,8 +49,13 @@
      text-align: left;
      padding-right: 1rem;
  }
+<<<<<<< HEAD
 
  .player-bar .main-controls .previous {
+=======
+ 
+.player-bar .main-controls .previous {
+>>>>>>> checkpoint18
      margin-right: 16.5%;
  }
  
@@ -45,15 +63,24 @@
      margin-right: 15%;
      font-size: 1.6rem;
  }
+<<<<<<< HEAD
  
+=======
+
+
+>>>>>>> checkpoint18
  .player-bar .currently-playing {
      width: 50%;
      text-align: center;
      position: relative;
  }
 
+<<<<<<< HEAD
  
  .player-bar .currently-playing .song-name,
+=======
+.player-bar .currently-playing .song-name,
+>>>>>>> checkpoint18
  .player-bar .currently-playing .artist-name,
  .player-bar .currently-playing .artist-song-mobile {
      text-align: center;
@@ -77,8 +104,12 @@
      display: none;
  }
 
+<<<<<<< HEAD
  
  .seek-control {
+=======
+.seek-control {
+>>>>>>> checkpoint18
      position: relative;
      font-size: 0.8rem;
  }
@@ -87,8 +118,12 @@
      position: absolute;
      top: 0.5rem;
  }
+<<<<<<< HEAD
  
  .seek-control .total-time {
+=======
+.seek-control .total-time {
+>>>>>>> checkpoint18
      position: absolute;
      right: 0;
      top: 0.5rem;
@@ -108,8 +143,12 @@
      height: 0.25rem;
      border-radius: 2px;
  }
+<<<<<<< HEAD
  
  .seek-bar .thumb {
+=======
+.seek-bar .thumb {
+>>>>>>> checkpoint18
      position: absolute;
      height: 0.5rem;
      width: 0.5rem;
@@ -125,21 +164,33 @@
         -moz-transition: all 100ms ease-in-out;
              transition: all 100ms ease-in-out;
  }
+<<<<<<< HEAD
  
+=======
+>>>>>>> checkpoint18
  .seek-bar:hover .thumb {
      width: 1.1rem;
      height: 1.1rem;
      margin-top: -0.5rem;
      margin-left: -0.5rem;
  }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> checkpoint18
  
  .player-bar .volume {
      width: 25%;
      text-align: right;
  }
 
+<<<<<<< HEAD
  
  .player-bar .volume .icon {
+=======
+.player-bar .volume .icon {
+>>>>>>> checkpoint18
      font-size: 1.1rem;
      display: inline-block;
      vertical-align: middle;
@@ -151,8 +202,12 @@
      vertical-align: middle;
  }
 
+<<<<<<< HEAD
  
  @media (max-width: 640px) {
+=======
+@media (max-width: 640px) {
+>>>>>>> checkpoint18
      .player-bar {
          padding: 1rem;
          background-color: rgba(0,0,0,0.6);
@@ -172,17 +227,33 @@
      .player-bar .volume {
          min-height: 3.5rem;
      }
+<<<<<<< HEAD
      
      .player-bar .currently-playing {
          min-height: 2.5rem;
      }
       
+=======
+	
+	.player-bar .currently-playing {
+         min-height: 2.5rem;
+     }
+
+>>>>>>> checkpoint18
      .player-bar .artist-name,
      .player-bar .song-name {
          display: none;
      }
+<<<<<<< HEAD
  
      .player-bar .currently-playing .artist-song-mobile {
          display: block;
      }
  }
+=======
+
+     .player-bar .currently-playing .artist-song-mobile {
+         display: block;
+     }
+ }
+>>>>>>> checkpoint18
