@@ -76,17 +76,19 @@
        };
 
 
-         // #1
+     
+            var setCurrentAlbum = function(album) {
+              currentAlbum = album;    
+
+             
+            // #1
      var $albumTitle = $('.album-view-title');
      var $albumArtist = $('.album-view-artist');
      var $albumReleaseInfo = $('.album-view-release-info');
      var $albumImage = $('.album-cover-art');
      var $albumSongList = $('.album-view-song-list');
 
-
-            var setCurrentAlbum = function(album) {
-              currentAlbum = album;    
-
+     
                  // #2
      $albumTitle.text(album.title);
      $albumArtist.text(album.artist);
@@ -121,14 +123,12 @@ var updatePlayerBarSong = function() {
     $('.currently-playing .artist-name').text(currentAlbum.artist);
     $('.currently-playing .artist-song-mobile').text(currentSongFromAlbum.title + " - " + currentAlbum.artist);
     $('.main-controls .play-pause').html(playerBarPauseButton);
-
+ 
+    
 };
               
-                // Album button templates
-
-            var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
-
-            var pauseButtonTemplate = '<a class="album-song-button"><span class="ion-pause"></span></a>';
+              
+           
 
             var playerBarPlayButton = '<span class="ion-play"></span>';
             var playerBarPauseButton = '<span class="ion-pause"></span>';
@@ -136,6 +136,7 @@ var updatePlayerBarSong = function() {
            
             var currentAlbum = null;
             var currentlyPlayingSongNumber = null;
+            
             var currentSongFromAlbum = null;
 
            var $previousButton = $('.main-controls .previous');
