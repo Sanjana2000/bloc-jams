@@ -191,17 +191,33 @@ var setCurrentAlbum = function(album) {
 
   
 
+<<<<<<< HEAD
 var setCurrentAlbum = function (album) {
      
+=======
+     
+            var setCurrentAlbum = function(album) {
+              currentAlbum = album;    
+
+             
+            // #1
+>>>>>>> checkpoint19
      var $albumTitle = $('.album-view-title');
 >>>>>>> checkpoint18
      var $albumArtist = $('.album-view-artist');
      var $albumReleaseInfo = $('.album-view-release-info');
      var $albumImage = $('.album-cover-art');
      var $albumSongList = $('.album-view-song-list');
+<<<<<<< HEAD
  
  
       $albumTitle.text(album.title);
+=======
+
+     
+                 // #2
+     $albumTitle.text(album.title);
+>>>>>>> checkpoint19
      $albumArtist.text(album.artist);
      $albumReleaseInfo.text(album.year + ' ' + album.label);
      $albumImage.attr('src', album.albumArtUrl);
@@ -221,9 +237,32 @@ var setCurrentAlbum = function (album) {
      };
 
 
+<<<<<<< HEAD
+=======
+var updatePlayerBarSong = function() {
+
+    $('.currently-playing .song-name').text(currentSongFromAlbum.title);
+    $('.currently-playing .artist-name').text(currentAlbum.artist);
+    $('.currently-playing .artist-song-mobile').text(currentSongFromAlbum.title + " - " + currentAlbum.artist);
+    $('.main-controls .play-pause').html(playerBarPauseButton);
+ 
+    
+};
+              
+              
+           
+>>>>>>> checkpoint19
 
 =======
 
+<<<<<<< HEAD
+=======
+           
+            var currentAlbum = null;
+            var currentlyPlayingSongNumber = null;
+            
+            var currentSongFromAlbum = null;
+>>>>>>> checkpoint19
 
 
 
