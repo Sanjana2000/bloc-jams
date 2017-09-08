@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -16,30 +15,12 @@ html {
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
-=======
-/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-
-html {
-  line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
->>>>>>> checkpoint18
 }
 
 /* Sections
    ========================================================================== */
 
 /**
-<<<<<<< HEAD
  * Remove the margin in all browsers (opinionated).
  */
 
@@ -48,8 +29,6 @@ body {
 }
 
 /**
-=======
->>>>>>> checkpoint18
  * Add the correct display in IE 9-.
  */
 
@@ -129,7 +108,6 @@ a {
 }
 
 /**
-<<<<<<< HEAD
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
@@ -141,9 +119,6 @@ a:hover {
 
 /**
  * 1. Remove the bottom border in Firefox 39-.
-=======
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
->>>>>>> checkpoint18
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
@@ -270,12 +245,8 @@ svg:not(:root) {
    ========================================================================== */
 
 /**
-<<<<<<< HEAD
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
-=======
- * Remove the margin in Firefox and Safari.
->>>>>>> checkpoint18
  */
 
 button,
@@ -283,14 +254,10 @@ input,
 optgroup,
 select,
 textarea {
-<<<<<<< HEAD
   font-family: sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
-=======
-  margin: 0;
->>>>>>> checkpoint18
 }
 
 /**
@@ -350,7 +317,6 @@ button:-moz-focusring,
 }
 
 /**
-<<<<<<< HEAD
  * Change the border, margin, and padding in all browsers (opinionated).
  */
 
@@ -361,8 +327,6 @@ fieldset {
 }
 
 /**
-=======
->>>>>>> checkpoint18
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
