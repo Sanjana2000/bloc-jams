@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Example Album
  var albumPicasso = {
      title: 'The Colors',
@@ -30,6 +31,16 @@
          { title: 'Wrong phone number', duration: '2:15'}
      ]
  };
+=======
+var createSongRow = function(songNumber, songName, songLength) {
+                 var template =
+                    '<tr class="album-view-song-item">'
+                  + '  <td class="song-item-number" data-song-number="' + songNumber + '">' + songNumber + '</td>' 
+                  + '  <td class="song-item-title">' + songName + '</td>'
+                  + '  <td class="song-item-duration">' + songLength + '</td>'
+                  + '</tr>'
+                  ;
+>>>>>>> checkpoint19
 
  // Another Example Album
  var albumMstowe = {
@@ -258,9 +269,9 @@ var updatePlayerBarSong = function() {
 <<<<<<< HEAD
 =======
            
-            var currentAlbum = null;
-            var currentlyPlayingSongNumber = null;
             
+            
+            var currentAlbum = null;
             var currentSongFromAlbum = null;
 >>>>>>> checkpoint19
 
@@ -274,6 +285,7 @@ var updatePlayerBarSong = function() {
 
  var currentlyPlayingSong = null;
 
+<<<<<<< HEAD
  
    $(document).ready(function() {
      setCurrentAlbum(albumPicasso);
@@ -301,3 +313,13 @@ document.getElementsByClassName('album-cover-art')[0].onclick = function () {
 =======
  };
 >>>>>>> checkpoint18
+=======
+              albumImage.addEventListener("click",function(event){
+              setCurrentAlbum(album[index]);
+              index++;
+              if(index == album.length){
+               index=0;
+              }
+           )};
+        };
+>>>>>>> checkpoint19
