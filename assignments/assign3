@@ -1,8 +1,4 @@
-
-
-
-
-DIFFERENCE BETWEEN RELATIVE AND ABSOLUTE POSITIONING;
+DIFFERENCE BETWEEN RELATIVE AND ABSOLUTE POSITIONING:
 
 Each element of document stacks on next element like building block.CSS layouts are used to position elements in a specific way.By using different postion properties and its valus, we can change the behaviour of page.
 
@@ -14,7 +10,8 @@ It changes with the change of viewport.
          Whereas absolute doesnt stay in normal flow of document.If we resize browser,absolute elements doesnt change position with it or columns dont overlap on each other.It doesnt interact with other elements because absolute elements are out of flow.It stays at same position.
 
 
-         default browser box-sizing and box-sizing:border-box behavior;
+
+DEFAULT BROWSER BOX-SIZING AND BOX-SIZING:BORDER-BOX BEHAVIOR:
 
 Every element in CSS is treated like a box.In documents, nested elements are called boxes within boxes.
 
@@ -46,4 +43,4 @@ Every element in CSS is treated like a box.In documents, nested elements are cal
 Overall size increases , inner box bleeds , inner box is not centered which is not expected.
 
 This can be fixed by using border-box value of box-sizing property.
-box-sizing:border-box works well with padding.It keeps overall size same,keeps content centered and it doesnt bleed outside.
+box-sizing:border-box works well with padding.It keeps overall size same, keeps content centered and it doesnt bleed outside.
