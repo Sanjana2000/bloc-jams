@@ -1,0 +1,49 @@
+
+
+
+
+DIFFERENCE BETWEEN RELATIVE AND ABSOLUTE POSITIONING;
+
+Each element of document stacks on next element like building block.CSS layouts are used to position elements in a specific way.By using different postion properties and its valus, we can change the behaviour of page.
+
+1. relative has offset properties top,right,bottom,left which are useful to adjust/shift element's position compare to other elements.This property creates coordinate system. Coordinate system is a reference point for offset properties.So element (whose property is relative) positions itself relative to the first parent element.
+      Whereas absolute property stays in one place and doesnt shifts.
+
+2. relative stays in normal flow.(Normal flow of the document is how elements stack one on top of each other, from the top down, in the order in which they appear in document.)
+It changes with the change of viewport.
+         Whereas absolute doesnt stay in normal flow of document.If we resize browser,absolute elements doesnt change position with it or columns dont overlap on each other.It doesnt interact with other elements because absolute elements are out of flow.It stays at same position.
+
+
+         default browser box-sizing and box-sizing:border-box behavior;
+
+Every element in CSS is treated like a box.In documents, nested elements are called boxes within boxes.
+
+ Default browser box-sizing behavior;
+ syntax is box-sizing:box-content;
+
+ Consider a box1 within box2.
+ <div class="box2">
+      <div class="box1"></div>
+</div>
+
+ We style as below;
+
+ .box2 {
+    width: 500px;
+    height: 300px;
+    border: 6px solid grey;
+    background-color: red;
+}
+.box2 .box1 {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+ 1st output;
+ Resulting in blue box with grey border.But we can not see box2(outer box) because box1 takes up 100% of space of parent box.(its set as width:100%,Height:100%)
+
+ 2nd output when we add padding;
+Overall size increases , inner box bleeds , inner box is not centered which is not expected.
+
+This can be fixed by using border-box value of box-sizing property.
+box-sizing:border-box works well with padding.It keeps overall size same,keeps content centered and it doesnt bleed outside.
