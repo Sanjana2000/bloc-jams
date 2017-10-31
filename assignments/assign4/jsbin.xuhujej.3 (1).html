@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by Sanjana2000 (http://jsbin.com/xuhujej/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="HTML Tables">
+  <meta charset="utf-8">
+  <title>HTML Tables</title>
+<style id="jsbin-css">
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.album-view-song-list {
+    width: 90%;
+    margin: 1.5rem auto;
+    font-weight: 300;
+    font-size: 1em;
+    
+    background-color:grey;
+}
+
+.album-view-song-item {
+    height: 3rem;
+}
+
+.song-item-number {
+    width: 7%;
+}
+
+.song-item-title {
+    width: 75%;
+centre;
+}
+
+.song-item-duration {
+    width: 7%;
+}
+.song-play-count {
+width: 10%;
+}
+table {
+    font-family: arial;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+  <table class="album-view-song-list">
+  <caption>Album 1</cation>
+      <thead>
+          <tr>
+              <th>Song#</th>
+              <th>Song-name</th>
+              <th>song-length</th>
+              <th>times-played</th>     
+          </tr>
+      </thead>
+      <tr class="album-view-song-item">
+          <td class="song-item-number">1</td>
+          <td class="song-item-title">Blue</td>
+          <td class="song-item-duration">X:XX</td>
+          <td class="# of times played">1</td>
+      </tr>
+      <tr class="album-view-song-item">
+          <td class="song-item-number">2</td>
+          <td class="song-item-title">Red</td>
+          <td class="song-item-duration">X:XX</td>
+          <td class="# of times played">1</td>
+      </tr>
+      <tr class="album-view-song-item">
+          <td class="song-item-number">3</td>
+          <td class="song-item-title">Green</td>
+          <td class="song-item-duration">X:XX</td>
+          <td class="# of times played">2</td>    
+      </tr>
+      <tr class="album-view-song-item">
+          <td class="song-item-number">4</td>
+          <td class="song-item-title">Purple</td>
+          <td class="song-item-duration">X:XX</td>
+          <td class="# of times played">5</td> 
+      </tr>
+      <tr class="album-view-song-item">
+          <td class="song-item-number">5</td>
+          <td class="song-item-title">Black</td>
+          <td class="song-item-duration">X:XX</td>
+          <td class="# of times played">1</td>   
+      </tr>
+      <tr class="album-view-song-item"> 
+          <td class="song-item-number">6</td>
+          <td class="song-item-title">grey</td>
+          <td class="song-item-duration">X:XX</td>
+          <td class="# of times played">2</td>  
+      </tr>
+      <tr class="album-view-song-item">      
+          <td class="song-item-number">7</td>
+          <td class="song-item-title">light-blue</td>
+          <td class="song-item-duration">X:XX</td>
+          <td class="# of times played">3</td>    
+      </tr> 
+ </table>
+</body>
+</html>
